@@ -6,7 +6,6 @@ import IconBox from './IconBox';
 const NavWrapper=styled.div`
     display:flex;
     width: 100%;
-    display: flex;
     gap: 2rem;
     justify-content: center;
     border-bottom: 1px solid rgb(219, 219, 219);
@@ -41,7 +40,7 @@ const Nav = () => {
     useEffect(()=>{
         const getIconData = async()=>{
             try{
-                const res = await fetch('/data/test.json')
+                const res = await fetch('/data/nav.json')
                 const data = await res.json()
                 console.log(data)
                 setIcons(data)

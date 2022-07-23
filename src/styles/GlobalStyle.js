@@ -4,6 +4,9 @@ import reset from 'styled-reset';
 const GlobalStyle = createGlobalStyle`
    ${reset}
    * {
+      html {
+        height:100%;
+      }
       box-sizing : border-box;
       outline : none;
     }
