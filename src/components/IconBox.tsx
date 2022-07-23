@@ -3,10 +3,8 @@ import styled from '@emotion/styled';
 
 const NavIcons = styled.div`
     display: flex;
-    
 
     img {
-        
         height: 25px;
         cursor: pointer;
       }
