@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 
 
 const Wrapper = styled.div`
-height:100%;`
+height:100vh;`
 
 const PostWrapper =styled.div`
 background:#efefef;
