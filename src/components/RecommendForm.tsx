@@ -12,7 +12,9 @@ interface Props {
 
 const RecoWrapper = styled.div`
 display:flex;
-`
+width:70%;
+
+ `
 
 const RecoProfileImg = styled.div`
 img{
@@ -21,32 +23,44 @@ img{
     border-radius:50%;
     cursor: pointer;
 }`
-const RecomInform=styled.div`
+const RecoTime=styled.div`
+    display:flex;
+    flex-direction:column;
+    margin:5px 0 0 10px;
+}
+`
+const RecoInform =styled.div`
 display:flex;
-flex-direction:column;`
+width:100%;
+justify-content:space-between;`
+
 
 const Follow=styled.button`
     border:none;
     top: 1rem;
     right: 1rem;
     color: #0095f6;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     `
 const RecommendForm = ({username,time,profileImg} : Props) => {
     return (
-      <RecoWrapper>
+     <RecoWrapper>
         <RecoProfileImg>
-          <img src={profileImg} alt="" />
+        <img src = {profileImg} alt =""/>
         </RecoProfileImg>
-        <RecomInform>
-          <span>{username}</span>
-          <span>{time}</span>
-        </RecomInform>
+        <RecoInform>
+        <RecoTime>
+            <span>{username}</span>
+            <span>{time}</span>
+        </RecoTime>
         <Follow>팔로우</Follow>
-      </RecoWrapper>
+        </RecoInform>
+     </RecoWrapper>
     );
   };
+
+
 
 export default RecommendForm;
