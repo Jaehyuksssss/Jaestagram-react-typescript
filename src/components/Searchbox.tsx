@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Post = () => {
+const Searchbox = () => {
     return (
         <div>
-            post
+            
         </div>
     );
 };
 
-export default Post;
+export default Searchbox;

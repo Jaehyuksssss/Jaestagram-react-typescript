@@ -7,6 +7,7 @@ flex-direction:column;
 align-items:center;
 width:90px;
 margin-top:16px;
+margin-left:2px;
 
 img{
     width:70px;
