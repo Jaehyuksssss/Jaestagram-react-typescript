@@ -11,6 +11,7 @@ width: 90%;
   p {
     width: 90%;
     padding-bottom: 1rem;
+    cursor: pointer;
   }
 `
 function Footer() {

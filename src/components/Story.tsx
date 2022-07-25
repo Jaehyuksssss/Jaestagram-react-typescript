@@ -6,10 +6,10 @@ import styled from '@emotion/styled';
 
 const StoryBox = styled.div`
 display:flex;
-height:30%;
-width:30%;
+height:12%;
+width:100%;
 margin-top:16px;
-border-radius:8px;
+border-radius:15px;
 background :rgb(255, 255, 255);
 border:1px solid #EBEDF0;`
 

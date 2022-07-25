@@ -8,8 +8,7 @@ import Post from 'components/Post';
 
 
 const Wrapper = styled.div`
-    height:100vh;
-    background:#efefef;
+    height:100%;
 
 
 // const PostWrapper =styled.div`
@@ -17,17 +16,24 @@ const Wrapper = styled.div`
 
 const Conatainer = styled.div`
     display:flex;
+    height: 100%;
+    background: #efefef; 
     flex-flow: row nowrap;
     justify-content:center;
     `
 const Sidebar = styled.div`
     width: 20%;
-    height: 400px; //--> sticky가 적용될 요소는 꼭 height값이 있어야 함
+    height: 200px; 
     position: sticky;
-    top: 0; //--> sticky 상단의 offset 0으로 부터 적용됨
+    top: 0;
     margin-left:5%
         
 `
+const MainContents= styled.div`
+display:flex;
+flex-direction:column;
+height:100%;
+width:35%`
 
 const Main = () => {
     return (
@@ -35,12 +41,12 @@ const Main = () => {
             <Nav />
         
             <Conatainer>
-            
-            <Story />
-            <Post />
+            <MainContents>
+                <Story />
+                <Post />
+            </MainContents>
          
           <Sidebar>
-
             <Recommend />
           </Sidebar>
             </Conatainer>

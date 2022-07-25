@@ -74,7 +74,7 @@ const Recommend = () => {
         <RecoBox>
              {profileInfo 
             && Object.values(profileInfo ).map((profile) => {
-                const {id,usernickname,username,time,profileImg} = profile as Props
+                const {id,usernickname,username,profileImg} = profile as Props
                 return (    
                     <MainProfile 
                     key={id}
