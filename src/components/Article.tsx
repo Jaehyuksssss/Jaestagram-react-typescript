@@ -57,7 +57,14 @@ img{
     width:25px;
     height:25px;
 }`
-
+const UserInfo= styled.div`
+display:flex;
+margin:5px;
+gap:0.5rem;
+`
+const Usernickname=styled.div`
+    font-weight:700;
+}`
 
 const Article = ({profileImg,usernickname,feedImg,feedText,likeNumber}:Props) => {
 
@@ -86,10 +93,10 @@ const Article = ({profileImg,usernickname,feedImg,feedText,likeNumber}:Props) =>
                  <span>Likes</span>
                  <span>{likeNumber}</span>
                 </LikesInfo>
-            <div>
-                <span>{usernickname}</span>
+            <UserInfo>
+                <Usernickname>{usernickname}</Usernickname>
                 <span>{feedText}</span>
-            </div>
+            </UserInfo>
             </div>
         </PostWrapper>
     );
