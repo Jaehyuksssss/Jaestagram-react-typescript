@@ -34,7 +34,8 @@ display:flex;
 width:100%;
 justify-content:space-between;`
 
-
+const Username= styled.div`
+font-weight:700;`
 const Follow=styled.button`
     border:none;
     top: 1rem;
@@ -52,7 +53,7 @@ const RecommendForm = ({username,time,profileImg} : Props) => {
         </RecoProfileImg>
         <RecoInform>
         <RecoTime>
-            <span>{username}</span>
+            <Username>{username}</Username>
             <span>{time}</span>
         </RecoTime>
         <Follow>팔로우</Follow>

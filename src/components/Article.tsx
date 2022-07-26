@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import styled from '@emotion/styled'
 
 interface Props {
@@ -59,15 +58,33 @@ img{
 }`
 const UserInfo= styled.div`
 display:flex;
+width: 90%;
 margin:5px;
 gap:0.5rem;
 `
 const Usernickname=styled.div`
     font-weight:700;
 }`
+const BtnSave = styled.button`
+    border: none;
+    background: #fff;
+    cursor: pointer;`
+
+const InnerBox=styled.div`
+    width: 90%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    input{
+        border: none;
+        width: 25rem;
+            }
+    `
 
 const Article = ({profileImg,usernickname,feedImg,feedText,likeNumber}:Props) => {
-
+    
     
     return (
         <PostWrapper>
@@ -98,6 +115,14 @@ const Article = ({profileImg,usernickname,feedImg,feedText,likeNumber}:Props) =>
                 <span>{feedText}</span>
             </UserInfo>
             </div>
+            <InnerBox>
+                <input
+                 type="text" 
+                 placeholder='댓글 달기...'/>
+                <BtnSave>
+              게시
+            </BtnSave>
+            </InnerBox>
         </PostWrapper>
     );
 };
