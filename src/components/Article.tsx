@@ -12,7 +12,6 @@ interface Props {
 }
 
 const PostWrapper=styled.div`
-
 `
 
 
