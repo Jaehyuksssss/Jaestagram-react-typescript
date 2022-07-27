@@ -1,9 +1,9 @@
 import React from 'react';
-import Nav from 'components/Nav';
-import Story from 'components/Story';
+import Nav from './components/Nav';
+import Story from './components/Story';
+import Recommend from './components/Recommend';
+import Post from './components/Post';
 import styled from '@emotion/styled';
-import Recommend from 'components/Recommend';
-import Post from 'components/Post';
 
 
 

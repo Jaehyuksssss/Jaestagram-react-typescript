@@ -35,7 +35,8 @@ width:100%;
 justify-content:space-between;`
 
 const Username= styled.div`
-font-weight:700;`
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-weight:400;`
 const Follow=styled.button`
     border:none;
     top: 1rem;

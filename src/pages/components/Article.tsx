@@ -41,6 +41,7 @@ width:87%;
 justify-content:space-between;
 align-items:center;
 span{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     margin-left:5px;
 }
 `
