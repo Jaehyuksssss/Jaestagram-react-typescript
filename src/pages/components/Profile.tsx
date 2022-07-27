@@ -1,6 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
+interface Props {
+    key : string,
+    id : string,
+    username : string,
+    profileImg ?: string
+}
+
 const StoryWrapper =styled.div`
 display:flex;
 flex-direction:column;
@@ -17,12 +24,7 @@ img{
 }
 
 `
-interface Props {
-    key : string,
-    id : string,
-    username : string,
-    profileImg ?: string
-}
+
 
 const Profile = ({profileImg,username}:Props) => {
     return (

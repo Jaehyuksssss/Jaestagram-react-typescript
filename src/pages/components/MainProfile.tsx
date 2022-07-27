@@ -30,6 +30,9 @@ const ProfileInfo = styled.div`
 margin:15px 0 0 5px;
 display:flex;
 flex-direction:column;
+span{
+    font-weight:700;
+}
 `
 
 
