@@ -1,5 +1,4 @@
 import React from 'react';
-// import Nav from './components/Nav';
 import Story from './components/Story';
 import Recommend from './components/Recommend';
 import Post from './components/Post';
@@ -11,8 +10,7 @@ import Nav from './components/Nav';
 const Wrapper = styled.div`
     height:100%;
 
-
-// const PostWrapper =styled.div`
+`
 
 
 const Conatainer = styled.div`
