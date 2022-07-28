@@ -1,9 +1,10 @@
 import React from 'react';
-import Nav from './components/Nav';
+// import Nav from './components/Nav';
 import Story from './components/Story';
 import Recommend from './components/Recommend';
 import Post from './components/Post';
 import styled from '@emotion/styled';
+import Nav from './components/Nav';
 
 
 
@@ -36,16 +37,16 @@ height:100%;
 width:35%`
 
 const Main = () => {
+
+
     return (
         <Wrapper>
-            <Nav />
-        
+         <Nav />
             <Conatainer>
             <MainContents>
                 <Story />
                 <Post />
             </MainContents>
-         
           <Sidebar>
             <Recommend />
           </Sidebar>
