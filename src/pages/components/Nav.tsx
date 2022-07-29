@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
-import IconBox from './IconBox';
 
 
-
+interface Props{
+    IconImg: any;
+    id:string;
+}
 
 const NavWrapper=styled.div`
     display:flex;
@@ -29,31 +30,21 @@ const InputSearch = styled.input`
     background: #EFEFEF;
     border: none;`
 
+const IconBox = styled.div`
+    display: flex;
+    justify-content:space-around;
+    width:15%;
+
+
+    img {
+        height: 25px;
+        cursor: pointer;
+      }`
+
  
-    interface Props{
-        IconImg: any;
-        id:string;
-    }
     
 const Nav = () => {
-    const [icons,setIcons] =useState<any>()
-
-
-    useEffect(()=>{
-        const getIconData = async()=>{
-            try{
-                const res = await fetch('/data/nav.json')
-                const data = await res.json()
-                console.log(data)
-                setIcons(data)
-            }catch(e){
-                console.error(e)
-            }
-            
-        }
-
-        getIconData()
-    },[]);
+    
 
     return (
         <NavWrapper>
@@ -63,21 +54,23 @@ const Nav = () => {
             placeholder="검색"
             >
             </InputSearch>
-          
-            {icons 
-            && Object.values(icons).map((icon) => {
-                const {id, IconImg} = icon as Props
-                return (
-                    <IconBox 
-                    key={id}
-                    id ={id}
-                    iconImg={IconImg}
-                    />
+            <IconBox>
+            {ICONS_LIST.map(({IconImg})=>{
+                return(
+                    <img src ={IconImg} alt=""/>
                 )
             })}
+            </IconBox>
        
         </NavWrapper>
     );
 };
 
 export default Nav;
+const ICONS_LIST = [
+    { id:1, IconImg:"/images/home.png"},
+    { id:2, IconImg:"/images/explore.png"},
+    { id:3, IconImg:"/images/plus.png"},
+    { id:4, IconImg:"/images/heart.png"},
+    { id:5, IconImg:"/images/profile.png"}
+];

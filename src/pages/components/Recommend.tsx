@@ -78,7 +78,7 @@ const Recommend = () => {
                 return (    
                     <MainProfile 
                     key={id}
-                    id ={Recommend.filter.id}
+                    id ={Recommend}
                     profileImg={profileImg}
                     username={username}
                     usernickname={usernickname}
@@ -95,7 +95,7 @@ const Recommend = () => {
                 return (    
                     <RecommendForm 
                     key={id}
-                    id ={Recommend.filter.id}
+                    id ={Recommend}
                     username={username}
                     time={time}
                     profileImg={profileImg}
