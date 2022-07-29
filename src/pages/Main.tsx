@@ -12,7 +12,6 @@ const Wrapper = styled.div`
 
 `
 
-
 const Conatainer = styled.div`
     display:flex;
     height: 100%;
