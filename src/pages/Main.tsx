@@ -48,7 +48,6 @@ const Main = () => {
             <Recommend />
           </Sidebar>
             </Conatainer>
-           
         </Wrapper>
 
     );
