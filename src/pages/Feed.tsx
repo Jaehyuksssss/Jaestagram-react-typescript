@@ -60,10 +60,6 @@ const Feed = () => {
                 )
             })}
             </div>
-
-            {/* <button>
-                <img src={ICONS_LIST[0].IconImg}/>
-            </button> */}
             <NavIcons>
             {ICONS_LIST.map(({IconImg})=>{
                 return(
