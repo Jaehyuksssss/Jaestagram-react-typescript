@@ -9,7 +9,6 @@ interface Props {
     profileImg ?: string
 }
 
-
 const RecoWrapper = styled.div`
 display:flex;
 width:70%;
