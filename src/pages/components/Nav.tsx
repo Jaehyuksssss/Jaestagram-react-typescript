@@ -40,12 +40,9 @@ const IconBox = styled.div`
         height: 25px;
         cursor: pointer;
       }`
-
- 
     
 const Nav = () => {
     
-
     return (
         <NavWrapper>
             <Logo>Instagram</Logo>
