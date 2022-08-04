@@ -37,7 +37,6 @@ const Post = () => {
             }
             
         }
-        
         getPostData()
     },[]);
     return (
