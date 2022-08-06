@@ -1,11 +1,6 @@
 import styled from '@emotion/styled';
 
 
-interface Props{
-    IconImg: any;
-    id:string;
-}
-
 const NavWrapper=styled.div`
     display:flex;
     width: 100%;

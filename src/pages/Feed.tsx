@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { useState, useEffect } from 'react';
 import MainProfile from './components/MainProfile';
 import Nav from './components/Nav';
-import Recommend from './components/Recommend';
+
 
 interface Props{
     IconImg: any;
